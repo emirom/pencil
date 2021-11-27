@@ -1,2 +1,2 @@
 # pencil
-a learning management system for non beneficial organizations
+a learning management system for non profit organizations
