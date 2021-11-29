@@ -1,0 +1,71 @@
+@font-face {
+    font-family: vazir;
+    src: url(fonts/Vazir-Regular-FD-WOL.eot);
+    src: url(fonts/Vazir-Regular-FD-WOL.ttf) format('tuetype'),
+         url(fonts/Vazir-Regular-FD-WOL.woff) format('woff'),
+         url(fonts/Vazir-Regular-FD-WOL.woff2) format('woff2');     
+}
+
+body{
+    font-family: vazir;
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:auto;
+}
+
+
+
+h1{
+    margin-bottom: 1.5em;
+    letter-spacing: -2px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+
+}
+
+input{
+    width: 50%;
+    padding: 1em 5px;
+    margin-bottom: 2em;
+    border: 2px solid #31D0AA;
+    border-radius: 13px;
+    box-shadow: 0 0 4px  #31d0ab88;
+    text-align: right;
+}
+
+input:focus{
+    box-shadow: inset 2px 2px 10px  #2eb3a359;
+    background-color: rgba(211, 211, 211, 0.295);
+    outline: none;
+    border: 2px solid white;
+}
+
+button{
+    padding: 10px;
+    width: 50%;
+    border: 2px solid #51B1A6;
+    border-radius: 13px;
+    background-color: #51B1A6;
+    color: white;
+    font-weight:bold;
+    font-size: large;
+}
