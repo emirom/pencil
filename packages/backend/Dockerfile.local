@@ -2,14 +2,14 @@ FROM node:16.13-alpine
 
 RUN mkdir -p /svr/app
 WORKDIR /svr/app
-RUN npm i -g @nestjs/cli --silent
+RUN yarn global add @nestjs/cli --silent
 
 COPY package.json .
-COPY package-lock.json .
-RUN npm install --silent
+COPY yarn.lock .
+RUN yarn install --silent
 
 COPY . .
 
 #set the value in .env file!
 EXPOSE $BACKEND_PORT
-CMD ["npm", "run", "start:debug"]
+CMD ["yarn", "run", "start:debug"]
